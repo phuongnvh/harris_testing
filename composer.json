@@ -1,0 +1,26 @@
+{
+	"name": "Duc An",
+	"description": "Duc An, Inc. Furniture paradise",
+	"keywords": ["furniture", "wood", "sculture", "ducan", "duc an"],
+	"type": "ecommerce",
+	"authors": [{
+		"name": "Dao Duy Duong",
+		"email": "dduy.duong@gmail.com"
+	}],
+	"bin": [
+		"bin/heroku-hhvm-apache2",
+		"bin/heroku-hhvm-nginx",
+		"bin/heroku-php-apache2",
+		"bin/heroku-php-nginx"
+	],
+	"require": {
+		"ext-mysql": "*",
+		"ext-gettext": "*",
+		"ext-gd": "*",
+		"ext-mbstring": "*",
+		"ext-soap": "*"
+  },
+	"require-dev": {
+		"heroku/heroku-buildpack-php": "*"
+	}
+}
