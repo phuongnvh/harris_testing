@@ -1,0 +1,40 @@
+<config>
+    <tabs>
+        <hp_customer translate="label" module="hp_customer">
+            <label>Harris Partners Config</label>
+            <sort_order>50</sort_order>
+        </hp_customer>
+    </tabs>
+    <sections>
+        <hp_customer_options translate="label" module="hp_customer">
+            <label>Harris Partners Config Options</label>
+            <tab>hp_customer</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <abandoned_cart_group translate="label" module="hp_customer">
+                    <label>Abandoned Cart</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <enabled translate="label">
+                            <label>Show Abandoned Cart Alert: </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled>
+                    </fields>
+                </abandoned_cart_group>
+            </groups>
+        </hp_customer_options>
+    </sections>
+</config>

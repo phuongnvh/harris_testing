@@ -15,6 +15,14 @@ class Hp_Customer_Model_Observer
      */
     public function customerLogin(Varien_Event_Observer $observer)
     {
+        //Retrieves Show Alert Config
+        $showAlertConfig = Mage::getStoreConfig('hp_customer_options/abandoned_cart_group/enabled');
+
+        //Do nothing if the feature is disabled
+        if (!$showAlertConfig) {
+            return;
+        }
+
         //Get customer quote
         $quote = Mage::getSingleton('checkout/session')->getQuote();
 

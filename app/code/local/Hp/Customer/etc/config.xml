@@ -11,6 +11,11 @@
                 <class>Hp_Customer_Model</class>
             </hp_customer>
         </models>
+        <helpers>
+            <hp_customer>
+                <class>Hp_Customer_Helper</class>
+            </hp_customer>
+        </helpers>
     </global>
     <frontend>
         <events>
@@ -25,4 +30,32 @@
             </customer_login>
         </events>
     </frontend>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <hp_customer_options>
+                                            <title>Harris Partners Module Section</title>
+                                        </hp_customer_options>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <default>
+        <hp_customer_options>
+            <abandoned_cart_group>
+                <enabled>1</enabled>
+            </abandoned_cart_group>
+        </hp_customer_options>
+    </default>
 </config>
