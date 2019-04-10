@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hp_Customer>
+            <version>1.0.0</version>
+        </Hp_Customer>
+    </modules>
+    <global>
+        <models>
+            <hp_customer>
+                <class>Hp_Customer_Model</class>
+            </hp_customer>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <customer_login>
+                <observers>
+                    <hp_customer_login>
+                        <type>model</type>
+                        <class>hp_customer/observer</class>
+                        <method>customerLogin</method>
+                    </hp_customer_login>
+                </observers>
+            </customer_login>
+        </events>
+    </frontend>
+</config>

@@ -1,0 +1,8 @@
+<?php $cookie = Mage::getSingleton('core/cookie'); ?>
+<?php $isAlertAbandonedCart = $cookie->get('show_abandoned_cart'); ?>
+<?php if($isAlertAbandonedCart): ?>
+    <script>
+        alert("You have products in your cart, don't forget to buy them.");
+    </script>
+    <?php $cookie->delete('show_abandoned_cart'); //Remove cookie value after showed alert ?>
+<?php endif; ?>
