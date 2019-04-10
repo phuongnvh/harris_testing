@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Hp_Catalog>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Hp_Catalog>
+    </modules>
+</config>

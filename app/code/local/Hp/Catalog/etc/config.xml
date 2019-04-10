@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hp_Catalog>
+            <version>1.0.0</version>
+        </Hp_Catalog>
+    </modules>
+    <global>
+        <resources>
+            <hpcatalog_setup>
+                <setup>
+                    <module>Hp_Catalog</module>
+                    <class>Hp_Catalog_Model_Resource_Setup</class>
+                </setup>
+            </hpcatalog_setup>
+        </resources>
+    </global>
+</config>
