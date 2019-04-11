@@ -4,7 +4,12 @@
  */
 class Hp_Catalog_Model_Resource_Setup extends Mage_Eav_Model_Entity_Setup
 {
-    //Prepare Mapping Values For EAV options
+    /**
+     * Preparing Array Attributes Value
+     *
+     * @param array $attr
+     * @return array
+     */
     protected function _prepareValues($attr) {
         $data = parent::_prepareValues($attr);
         $data = array_merge($data, array(
