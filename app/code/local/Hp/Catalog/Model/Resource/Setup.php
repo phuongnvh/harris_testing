@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class Hp_Catalog_Model_Resource_Setup
  */
